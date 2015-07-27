@@ -5,3 +5,4 @@
 * compile using `make thesis.pdf` (or html, epub)
 * clean all compiled files up with `make clean`
 * clean just latex's intermediate files with `make clean-auxiliaries`
+* add tracking data to tracking/data.js if you want to track your progress
