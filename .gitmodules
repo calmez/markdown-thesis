@@ -1,3 +1,6 @@
 [submodule "swathesis"]
 	path = swathesis
 	url = https://github.com/krono/swathesis.git
+[submodule "bibliography-styles"]
+	path = bibliography-styles
+	url = https://github.com/citation-style-language/styles.git
