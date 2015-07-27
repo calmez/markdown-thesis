@@ -1,0 +1,28 @@
+---
+title:
+    english:
+        main: 'XXX english title'
+        subtitle: 'XXX english subtitle'
+    german:
+        main: 'XXX deutscher Titel'
+        subtitle: 'XXX deutscher Untertitel'
+author:
+  name: Name
+  firstname: Vorname
+  email: vorname.name@uni-mail-address.edu
+  affiliation: Name of University
+tags: [tags, master, thesis]
+sources: sources.bib
+abstract:
+    german : |
+        XXX deutsche Zusammenfassung
+    english: |
+        XXX english abstract
+acknowledgments: |
+    XXX To the people that supported me.
+toc-depth: 2
+acromyms: |
+    \newacronym{GoF}{Gang of Four}
+css: ["bootstrap.min.css", "bootstrap-theme.css", "jquery.tocify.css"]
+js: ["jquery-1.11.3.min.js", "jquery-ui.min.js", "jquery.tocify.min.js", "bootstrap.min.js", "setup.js"]
+...

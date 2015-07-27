@@ -1,0 +1,19 @@
+---
+title:
+- type: main
+  text: XXX main title
+- type: subtitle
+  text: XXX subtitle
+creator:
+- role: author
+  text: XXX your name
+- role: editor
+  text: XXX the editor's name
+- role: editor
+  text: XXX the other editor's name
+identifier:
+- scheme: DOI
+  text: doi:10.234234.234/33
+publisher:  XXX some publisher
+rights: © 2015 XXX your name or so, CC BY-NC
+...

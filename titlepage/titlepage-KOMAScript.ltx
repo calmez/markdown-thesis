@@ -1,0 +1,63 @@
+%%
+%% This is file `titlepage-KOMAScript.ltx',
+%% generated with the docstrip utility.
+%%
+%% The original source files were:
+%%
+%% titlepage.dtx  (with options: `doc,example,KOMAScript')
+%% Copyright (c) 2011 by Markus Kohm <komascript(at)gmx.info>
+%% 
+%% This file was generated from file(s) of titlepage distribution.
+%% ----------------------------------------------------------------------
+%% 
+%% This work may be distributed and/or modified under the conditions of
+%% the LaTeX Project Public License, version 1.3c of the license.
+%% The latest version of this license is in
+%%   http://www.latex-project.org/lppl.txt
+%% and version 1.3c or later is part of all distributions of LaTeX
+%% version 2005/12/01 or later.
+%% 
+%% This work has the LPPL maintenance status "maintained".
+%% 
+%% The Current Maintainer and author of this work is Markus Kohm.
+%% 
+%% This file may only be distributed together with the file
+%% `titlepage.dtx'. You may however distribute the file `titlepage.dtx'
+%% without this file.
+%% 
+%% NOTE: THIS IS AN ALPHA-VERSION!
+\ProvidesFile{%
+  title%
+  page%
+  -KOMAScript%
+  .ltx%
+}[%
+  2013/08/06 v0.4d
+  KOMA presents the title page project
+]
+\documentclass[a4paper,pagesize]{scrbook}
+\usepackage[utf8]{inputenc}
+\usepackage[ngerman]{babel}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{xcolor}
+\usepackage{titlepage}
+\begin{document}
+\TitlePageStyle[pagenumber=1]{KOMAScript}
+\maketitle[
+  extratitle=\textcolor{red}{Das ist ein Schmutztitel im Stil \texttt{KOMAScript}},
+  titlehead=\textcolor{red}{Den Kopfbereich kann man auf diese Weise füllen.},
+  subject=\textcolor{red}{Eine Klassifizierung der Arbeit},
+  title=\textcolor{red}{Titel im Stil \texttt{KOMAScript}},
+  subtitle=\textcolor{red}{Untertitel},
+  publisher=\textcolor{red}{Einen Verlag kann man ebenfalls angeben},
+  uppertitleback=\textcolor{red}{Oberer Bereich der Rückseite des Haupttitels im Stil
+    \texttt{KOMAScript}.},
+  lowertitleback=\textcolor{red}{Unterer Bereich der Rückseite des Haupttitels im Stil
+    \texttt{KOMAScript}.},
+  dedication=\textcolor{red}{Eine Widmung im Stil \texttt{KOMAScript}}
+]
+\end{document}
+\endinput
+%%
+%% End of file `titlepage-KOMAScript.ltx'.

@@ -1,0 +1,65 @@
+%%
+%% This is file `titlepage-Markus-1.ltx',
+%% generated with the docstrip utility.
+%%
+%% The original source files were:
+%%
+%% titlepage.dtx  (with options: `doc,example,Markus,1')
+%% Copyright (c) 2011 by Markus Kohm <komascript(at)gmx.info>
+%% 
+%% This file was generated from file(s) of titlepage distribution.
+%% ----------------------------------------------------------------------
+%% 
+%% This work may be distributed and/or modified under the conditions of
+%% the LaTeX Project Public License, version 1.3c of the license.
+%% The latest version of this license is in
+%%   http://www.latex-project.org/lppl.txt
+%% and version 1.3c or later is part of all distributions of LaTeX
+%% version 2005/12/01 or later.
+%% 
+%% This work has the LPPL maintenance status "maintained".
+%% 
+%% The Current Maintainer and author of this work is Markus Kohm.
+%% 
+%% This file may only be distributed together with the file
+%% `titlepage.dtx'. You may however distribute the file `titlepage.dtx'
+%% without this file.
+%% 
+%% NOTE: THIS IS AN ALPHA-VERSION!
+\ProvidesFile{%
+  title%
+  page%
+  -Markus-1%
+  .ltx%
+}[%
+  2013/08/06 v0.4d
+  KOMA presents the title page project
+]
+\documentclass[a4paper,pagesize]{scrbook}
+\usepackage[utf8]{inputenc}
+\usepackage[ngerman]{babel}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{xcolor}
+\usepackage{titlepage}
+\begin{document}
+\setkomafont{subject}{\normalfont\sffamily}% because of KOMA-Script class
+\setkomafont{title}{\normalfont\sffamily}% because of KOMA-Script class
+\TitlePageStyle[pagenumber=1]{Markus-1}
+\maketitle[%
+  titlepagefont={\normalfont\sffamily},% to show is without KOMA-Script class
+  title=\textcolor{red}{Titel im Stil \texttt{Markus-1}},
+  subject=\textcolor{red}{Eine Klassifizierung der Arbeit},
+  subtitle=\textcolor{red}{Untertitel},
+  publisher=\textcolor{red}{Verlag},
+  uppertitleback=\textcolor{red}{Oberer Bereich der Rückseite des Haupttitels
+    im Stil \texttt{Markus-1}.},
+  lowertitleback=\textcolor{red}{Unterer Bereich der Rückseite des Haupttitels
+    im Stil \texttt{Markus-1}.},
+  dedication=\textcolor{red}{Eine Widmung im Stil \texttt{Markus-1}},
+  author=\textcolor{red}{Markus~Kohm\protect\and Sonst~Jemand}
+]
+\end{document}
+\endinput
+%%
+%% End of file `titlepage-Markus-1.ltx'.

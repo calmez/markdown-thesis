@@ -1,0 +1,3 @@
+[submodule "swathesis"]
+	path = swathesis
+	url = https://github.com/krono/swathesis.git

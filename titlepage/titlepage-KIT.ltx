@@ -1,0 +1,71 @@
+%%
+%% This is file `titlepage-KIT.ltx',
+%% generated with the docstrip utility.
+%%
+%% The original source files were:
+%%
+%% titlepage.dtx  (with options: `doc,example,KIT')
+%% Copyright (c) 2011 by Markus Kohm <komascript(at)gmx.info>
+%% 
+%% This file was generated from file(s) of titlepage distribution.
+%% ----------------------------------------------------------------------
+%% 
+%% This work may be distributed and/or modified under the conditions of
+%% the LaTeX Project Public License, version 1.3c of the license.
+%% The latest version of this license is in
+%%   http://www.latex-project.org/lppl.txt
+%% and version 1.3c or later is part of all distributions of LaTeX
+%% version 2005/12/01 or later.
+%% 
+%% This work has the LPPL maintenance status "maintained".
+%% 
+%% The Current Maintainer and author of this work is Markus Kohm.
+%% 
+%% This file may only be distributed together with the file
+%% `titlepage.dtx'. You may however distribute the file `titlepage.dtx'
+%% without this file.
+%% 
+%% NOTE: THIS IS AN ALPHA-VERSION!
+\ProvidesFile{%
+  title%
+  page%
+  -KIT%
+  .ltx%
+}[%
+  2013/08/06 v0.4d
+  KOMA presents the title page project
+]
+\documentclass[a4paper,pagesize]{scrbook}
+\usepackage[utf8]{inputenc}
+\usepackage[ngerman]{babel}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage[demo]{graphicx}% remove option demo if you have the logo
+\usepackage{xcolor}
+\usepackage{titlepage}
+\begin{document}
+\TitlePageStyle{KIT}
+\maketitle[%
+  mainlogo={\textcolor{red}{%
+      \includegraphics[width=40mm,height=18.5mm]{KITLogo_RGB}}},%
+  % You may additionally change titlehead. Original definition of titlehead
+  % is:
+  titlehead={\usetitleelement{mainlogo}\hspace*{\fill}},%
+  title=\textcolor{red}{Titel der Arbeit\\im Stil \texttt{KIT}},%
+  subject=\textcolor{red}{Klassifizierung der Arbeit},%
+  author=\textcolor{red}{Markus~Kohm},%
+  faculty=\textcolor{red}{Fakultät für Informatik},%
+  chair=\textcolor{red}{%
+    Institute for Program Structures\\and Data Organization (IPA)},%
+  advisor={\textcolor{red}{Titel Vorname Nachname}\and
+    \textcolor{red}{Titel Vorname Nachname}},%
+  referee={\textcolor{red}{Titel Vorname Nachname}\and
+    \textcolor{red}{Titel Vorname Nachname}},%
+  duration=\textcolor{red}{XX. Monat 20XX -- XX. Monat 20XX},%
+  university=\textcolor{red}{\KITlongname},%
+  homepage=\textcolor{red}{\KITurl}%
+]
+\end{document}
+\endinput
+%%
+%% End of file `titlepage-KIT.ltx'.

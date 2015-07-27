@@ -1,0 +1,31 @@
+#!/usr/bin/env python
+# -*- coding: UTF-8 -*-
+
+GOAL = 25000
+
+import os
+
+
+def count_words():
+    count = 0
+    file_names = [file_name for file_name in os.listdir(".")
+                  if file_name.endswith(".md")]
+    for file_name in file_names:
+        with open(file_name, 'rb') as f:
+            for line in f:
+                count += len(line.split())
+    return count
+
+if __name__ == "__main__":
+    count = count_words()
+    progress = (100.0 / GOAL) * count
+    tty_width = max(int(os.popen('stty size', 'r').read().split()[1]), 60)
+    print("")
+    print("*" * tty_width)
+    print("Pages: %d / %d = %.2f%% done, %d to go" % (
+        count, GOAL, progress, GOAL - count))
+    progress_hashes = (int((tty_width / 100.) * progress) - 4)
+    print("[ %s%s ]" % (
+        "#" * progress_hashes, " " * (tty_width - progress_hashes - 4)))
+    print("*" * tty_width)
+    print("")

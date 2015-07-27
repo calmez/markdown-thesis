@@ -1,0 +1,72 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"$if(lang)$ lang="$lang$" xml:lang="$lang$"$endif$>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <meta name="generator" content="scholdoc" />
+    <meta name="author" content="$author.firstname$ $author.name$" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+$if(date-meta)$
+    <meta name="date" content="$date-meta$" />
+$endif$
+    <title>$title.english.main$</title>
+    <style type="text/css">code{white-space: pre;}</style>
+$if(quotes)$
+    <style type="text/css">q { quotes: "“" "”" "‘" "’"; }</style>
+$endif$
+$if(highlighting-css)$
+    <style type="text/css">
+        $highlighting-css$
+    </style>
+$endif$
+$for(css)$
+    <link rel="stylesheet" href="templates/css/$css$" $if(html5)$$else$type="text/css" $endif$/>
+$endfor$
+    <style type="text/css">
+        figure {
+            padding: .5em 0 .5em 0;
+        }
+        figcaption > .scholmd-caption-head {
+            font-weight: bold;
+        }
+        figcaption > .scholmd-caption-head > .scholmd-caption-head-prefix::after {
+            content: " "
+        }
+        figcaption > .scholmd-caption-head > .scholmd-caption-head-label::after {
+            content: ": "
+        }
+    </style>
+$if(math)$
+  $math$
+$endif$
+$for(header-includes)$
+  $header-includes$
+$endfor$
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3 hidden-xs hidden-sm" role="complementary" style="margin-top: 20px;">
+                $if(toc)$
+                <div id="toc" class="hidden-print">
+                    <!--$toc$-->
+                </div>
+                $endif$
+            </div>
+            <div class="col-md-offset-1 col-md-8" role="main">
+                <div class="page-header">
+                    <h1 class="not-in-toc">
+                        $title.english.main$<br />
+                        <small>$title.english.subtitle$</small>
+                    </h1>
+                    <h2 class="not-in-toc">by $author.firstname$ $author.name$</h2>
+                </div>
+                $body$
+            </div>
+        </div>
+    </div>
+    $for(js)$
+        <script src="templates/js/$js$"></script>
+    $endfor$
+</body>
+</html>
